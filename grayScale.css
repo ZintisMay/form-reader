@@ -1,0 +1,36 @@
+/* * {
+  outline: 1px dotted red;
+} */
+body {
+  margin: 0;
+}
+.box {
+  padding: 20px;
+}
+body {
+  background-color: white;
+}
+body > * {
+  background-color: gainsboro;
+}
+body > * > * {
+  background-color: darkgray;
+}
+body > * > * > * {
+  background-color: gray;
+}
+body > * > * > * > * {
+  background-color: #404040;
+}
+body > * > * > * > * > * {
+  background-color: #303030;
+}
+body > * > * > * > * > * > * {
+  background-color: #202020;
+}
+body > * > * > * > * > * > * > * {
+  background-color: #101010;
+}
+body > * > * > * > * > * > * > * > * {
+  background-color: #000000;
+}
