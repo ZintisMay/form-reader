@@ -10,13 +10,7 @@ window.onload = function () {
       let data = new FormData(e.target);
       for (var key of data.keys()) {
         if (data.get(key) !== "") {
-          console.log(
-            "NAME:",
-            key,
-            "VALUE:",
-            data.get(key),
-            typeof data.get(key)
-          );
+          console.log("NAME:", key, "VALUE:", data.get(key));
         } else {
           console.log(key, "is empty");
         }
