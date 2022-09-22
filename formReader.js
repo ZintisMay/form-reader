@@ -5,10 +5,21 @@ window.onload = function () {
     f.addEventListener("submit", function (e) {
       e.preventDefault();
       alert("You submitted your form. Check your inspector console.");
+      console.log("Form Data Submitted:");
       new FormData(e.target);
       let data = new FormData(e.target);
       for (var key of data.keys()) {
-        console.log(key, data.get(key));
+        if (data.get(key) !== "") {
+          console.log(
+            "NAME:",
+            key,
+            "VALUE:",
+            data.get(key),
+            typeof data.get(key)
+          );
+        } else {
+          console.log(key, "is empty");
+        }
       }
     });
   }
