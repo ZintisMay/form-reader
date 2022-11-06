@@ -4,7 +4,6 @@ window.onload = function () {
     let f = forms[x];
     f.addEventListener("submit", function (e) {
       e.preventDefault();
-      alert("You submitted your form. Check your inspector console.");
       console.log("Form Data Submitted:");
       new FormData(e.target);
       let data = new FormData(e.target);
